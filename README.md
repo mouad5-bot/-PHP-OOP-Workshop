@@ -10,8 +10,6 @@ Dans un programme multifonction, bien que les fonctions puissent contenir des do
 
 La figure suivante vous montre comment les fonctions opèrent sur les données globales et comment elles interagissent entre elles :
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e00aaa3-2b93-4b40-a2ee-87d2e10a7970/programmation_procdurale.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e00aaa3-2b93-4b40-a2ee-87d2e10a7970/programmation_procdurale.jpg)
-
 ## L'orienté objet (POO ou OOP)
 
 En programmation, une chose qui peut être décrite et qui possède un certain nombre d'actions peut être appelée un objet. Un objet peut représenter une entité de la vie réelle ayant un certain nombre d'actions à effectuer. Un chien peut être décrit à l'aide de certains états, tels que la couleur, la race, l'âge, etc., et effectuer certaines actions, comme aboyer, courir, remuer la queue, etc. Un ventilateur de table peut être décrit par sa couleur, sa vitesse, sa direction, etc., et effectuer des actions telles que changer de vitesse, changer de direction, tourner, etc.
@@ -55,7 +53,7 @@ Pour mettre en œuvre l'idée de réutilisation, nous devons apprendre le proces
 
 En utilisant ce que vous avez appris dans l'exercice précédent et le concept de l’héritage. Implémenter le diagramme de classe illustré dans la figure suivante :
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b45d48ae-71e2-49a8-acab-820e57b7ddc5/inheretence.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b45d48ae-71e2-49a8-acab-820e57b7ddc5/inheretence.jpg)
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b45d48ae-71e2-49a8-acab-820e57b7ddc5/inheretence.
 
 ## 4. Modificateurs d'accès (Access modifiers)
 
@@ -100,7 +98,7 @@ public static $counter = 0 ;
 
 Dans la POO, l'abstraction de classe est la manière de définir les comportements communs des objets afin que les classes dérivées puissent implémenter ces comportements à leur manière pour atteindre des objectifs différents. Prenons l'analogie du véhicule : les voitures et les motos ont des moteurs en commun, mais vous savez que les moteurs sont complètement différents pour chaque type de véhicule. Ainsi, l'abstraction de classe devrait fournir un moteur abstrait pour les deux types de véhicules. Pour correspondre à une définition commune exacte d'un moteur, le moteur devrait démarrer, le moteur devrait s'arrêter, et nous pourrions vouloir connaître l'état du moteur - s'il est en marche ou non. Chaque type de véhicule doit mettre en œuvre sa propre façon de démarrer le moteur. Par exemple, le moteur d'une voiture peut être démarré à l'aide d'une clé dans le contact, tandis qu'une moto peut nécessiter un coup de pied pour démarrer le moteur.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cc80c1cc-c1c1-4e8d-8aad-d03307981a8f/Abstraction.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cc80c1cc-c1c1-4e8d-8aad-d03307981a8f/Abstraction.jpg)
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cc80c1cc-c1c1-4e8d-8aad-d03307981a8f/Abstraction.
 
 PHP supporte les classes et méthodes abstraites et elles peuvent être écrites avec le mot clé abstract au début. Une classe abstraite ne peut pas être instanciée ; elle peut être héritée pour obtenir des comportements communs entre les objets. Une classe doit contenir au moins une méthode abstraite pour être une classe abstraite. En utilisant une telle classe, nous fournissons des méthodes communes aux sous-classes. Dans une classe abstraite, les méthodes communes pourraient être abstraites parce qu'elles n'ont que les signatures et que les sous-classes implémentent ces méthodes à leur manière. Une méthode déclarée comme méthode abstraite ne doit pas avoir l'implémentation écrite en elle.
 
