@@ -1,13 +1,13 @@
 <?php
 
     class Vehicle{
-        public $make;
-        public $model;
-        public $color;
-        public $noOfWheels;
-        public $engineNumber;
-   
-        function __construct($make='', $model='', $color='', $wheels='', $engineNo=''){
+        protected $make;
+        protected $model;
+        protected $color;
+        private $noOfWheels;
+        private $engineNumber;
+        
+        function __construct($make, $model, $color, $wheels, $engineNo){
             $this->make = $make;
             $this->model = $model;  
             $this->color = $color; 
@@ -30,8 +30,6 @@
         function getEngineNumber(){
             return $this->engineNumber;            
         }
-
-
     }
     $obj = new Vehicle('ferary', 'F430', 'red', '488', 'F12');
     
@@ -40,5 +38,4 @@
     echo $obj->getColor().' ';
     echo $obj->getNoOfWheels().' ';
     echo $obj->getEngineNumber();
-
 ?>
